@@ -1,31 +1,64 @@
-Rennes School — Phase 1 (HTML & CSS)
+# Rennes School — Phase 1 (HTML & CSS)
 
-This repository contains the Phase 1 delivery: a responsive implementation of the provided design using HTML + CSS.
+This repository contains the **Phase 1** delivery of the Rennes School UI: the provided design mockups integrated as a **responsive static website** using **HTML and CSS** (JavaScript only where necessary).
 
-Live Demo
-	•	Vercel: https://rennes-school-phase1.vercel.app
+## Deliverables
+- **Public GitHub Repository:** https://github.com/burcusavci96/rennes-school-phase1
+- **Live Demo (Vercel):** https://rennes-school-phase1.vercel.app
 
-Features
-	•	Responsive layout for mobile / tablet / desktop
-	•	3-column dashboard layout built with CSS Grid/Flexbox
-	•	Sidebar + content layout on desktop, mobile-friendly flow
-	•	Base UI for Dashboard, News and Schedule pages
-	•	Banner cards and course cards
-	•	UI refinements: spacing, alignment, panel width, logo sizing
+> Phase 2 (React) is delivered separately in its own repository.
 
-Tech Stack
-	•	HTML5
-	•	CSS3 (Grid, Flexbox)
-	•	JavaScript (for basic interactions)
+---
 
-Getting Started
+## Scope
+The goal of Phase 1 is to reproduce the UI from the mockups as closely as possible using a clean, responsive layout.
 
-This is a static project.
-	•	Open index.html directly in your browser
-	•	Or run it using VS Code Live Server
+Implemented features:
+- **Responsive layout** (mobile / tablet / desktop)
+- **Mobile-first approach** with CSS breakpoints
+- **Flexbox and Grid** used throughout the layout
+- Dashboard-style UI with:
+  - Left column course cards (date pill + course information)
+  - Center column events/news banners with image overlay titles
+  - Right column welcome card section
+- Consistent typography, spacing, and component styling aligned with the mockups
+- Assets included in the repository (`assets/`)
 
-Project Structure
-	•	index.html / pages/ — pages
-	•	css/ — styles
-	•	js/ — scripts
-	•	assets/ — images / icons
+---
+
+## Tech Stack
+- HTML5
+- CSS3 (Flexbox / Grid)
+- JavaScript (minimal, only if required)
+
+---
+
+## Getting Started
+
+### Run locally
+Because this is a static site, you can open `index.html` directly in your browser.
+
+For a better local dev experience (recommended), run a simple local server:
+
+**Option A — VS Code Live Server**
+- Install “Live Server” extension
+- Right-click `index.html` → **Open with Live Server**
+
+**Option B — Node (http-server)**
+```bash
+npx http-server
+
+Project Structure (overview)
+	•	index.html — main entry
+	•	pages/ — additional pages (if applicable)
+	•	css/ — stylesheets (layout, dashboard, components)
+	•	js/ — scripts (only where needed)
+	•	assets/ — images, icons, and UI assets
+
+
+Notes
+	•	The UI is implemented according to the provided design mockups.
+	•	All required assets are included in the repository.
+	•	Phase 1 focuses on layout integration and responsiveness; application logic and routing are handled in Phase 2 (React).
+
+Author - Burcu Savcı
