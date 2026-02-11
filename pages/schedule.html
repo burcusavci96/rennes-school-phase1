@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule • Rennes School</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="appShell">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Sidebar navigation">
+        <div class="brand">
+          <img class="brandLogo" src="../assets/logo/logo.png" alt="Rennes School" />
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="navItem" href="./dashboard.html">
+            <img class="navIcon" src="../assets/icons/sidebar/dashboard.png" alt="" />
+            <span class="navText">Dashboard</span>
+          </a>
+
+          <a class="navItem active" href="./schedule.html" aria-current="page">
+            <img class="navIcon" src="../assets/icons/sidebar/schedule-active.png" alt="" />
+            <span class="navText">Schedule</span>
+          </a>
+
+          <a class="navItem" href="./studies.html">
+            <img class="navIcon" src="../assets/icons/sidebar/studies.png" alt="" />
+            <span class="navText">Studies</span>
+          </a>
+
+          <a class="navItem" href="./help.html">
+            <img class="navIcon" src="../assets/icons/sidebar/help.png" alt="" />
+            <span class="navText">Help</span>
+          </a>
+        </nav>
+
+        <button class="logoutBtn" type="button">
+          <img class="navIcon" src="../assets/icons/sidebar/logout.png" alt="" />
+          <span class="navText">Logout</span>
+        </button>
+      </aside>
+
+      <!-- Main -->
+      <main class="appMain">
+        <!-- Header (hidden on mobile via CSS) -->
+        <header class="header">
+          <div class="headerLeft">
+            <div class="hello">Hi</div>
+            <div class="name">Naïma</div>
+          </div>
+
+          <div class="headerRight">
+            <button class="iconBtn" type="button" aria-label="Notifications">
+              <img src="../assets/icons/ui/bell.png" alt="" />
+            </button>
+            <button class="iconBtn" type="button" aria-label="Settings">
+              <img src="../assets/icons/ui/settings.png" alt="" />
+            </button>
+          </div>
+        </header>
+
+        <!-- Content -->
+        <section class="content">
+          <div class="dashPanel schedulePanel">
+            <!-- Desktop controls (hidden on mobile via CSS) -->
+            <div class="schedTop">
+              <div class="schedLeft">
+                <div class="schedMonth" id="schedMonth">February 2026</div>
+
+                <div class="schedNav">
+                  <button class="schedBtn" type="button" aria-label="Previous" id="btnPrev">‹</button>
+                  <button class="schedBtn schedBtn--ghost" type="button" id="btnToday">Today</button>
+                  <button class="schedBtn" type="button" aria-label="Next" id="btnNext">›</button>
+                </div>
+              </div>
+
+              <div class="schedRight">
+                <div class="viewToggle" role="tablist" aria-label="View mode">
+                  <a class="viewTab" data-mode="day" href="./schedule-day.html">Day</a>
+                  <a class="viewTab" data-mode="week" href="./schedule.html">Week</a>
+                  <a class="viewTab" data-mode="month" href="./schedule-month.html">Month</a>
+                </div>
+
+                <div class="datePillWide" id="schedRange">09 Feb - 15 Feb 2026</div>
+              </div>
+            </div>
+
+            <!-- Mobile day header -->
+            <div class="mDayTop" id="mDayTop" style="display:none;">
+              <button class="mDayArrow" id="mPrevWeek" type="button" aria-label="Previous week">‹</button>
+              <div class="mDayMonth" id="mMonthTitle">February</div>
+              <button class="mDayArrow" id="mNextWeek" type="button" aria-label="Next week">›</button>
+            </div>
+
+            <!-- Mobile day strip -->
+            <div class="mDayStrip" id="mDayStrip" style="display:none;"></div>
+
+            <!-- Week view -->
+            <div class="weekGrid" id="weekGrid">
+              <div class="weekHead" id="weekHead">
+                <div class="weekHeadSpacer"></div>
+              </div>
+
+              <div class="weekBody" id="weekBody">
+                <div class="timeCol" id="timeCol"></div>
+
+                <div class="daysCols">
+                  <div class="daysGrid" aria-hidden="true"></div>
+                  <div class="eventsLayer" id="eventsLayer" aria-label="Week events"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Day view -->
+            <div id="dayView" style="display:none; padding: 10px 0;">
+              <div class="dayWrap">
+                <div class="dayTimeCol" id="dayTimeCol"></div>
+
+                <div class="dayTimeline">
+                  <div class="dayGrid" aria-hidden="true"></div>
+                  <div id="dayList" class="dayList"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Month view -->
+            <div id="monthView" style="display:none; padding: 10px 0;">
+              <div id="monthGrid" class="monthGrid"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bottom navigation (mobile) -->
+        <nav class="bottomNav" aria-label="Bottom navigation">
+          <a class="bottomItem" href="./dashboard.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/dashboard.png" alt="" />
+            <span class="bottomText">Dashboard</span>
+          </a>
+
+          <a class="bottomItem bottomItem--active" href="./schedule.html" aria-current="page">
+            <img class="bottomIcon" src="../assets/icons/sidebar/schedule-active.png" alt="" />
+            <span class="bottomText">Schedule</span>
+          </a>
+
+          <a class="bottomItem" href="./studies.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/studies.png" alt="" />
+            <span class="bottomText">Studies</span>
+          </a>
+
+          <a class="bottomItem" href="./help.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/help.png" alt="" />
+            <span class="bottomText">Help</span>
+          </a>
+        </nav>
+      </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/main.js" defer></script>
+    <script type="module" src="../js/pages/schedule-pages.js"></script>
+  </body>
+</html>

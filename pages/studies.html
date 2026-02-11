@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studies • Rennes School</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="appShell">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="brand">
+          <img class="brandLogo" src="../assets/logo/logo.png" alt="Rennes School" />
+        </div>
+
+        <nav class="nav">
+          <a class="navItem" href="./dashboard.html">
+            <img class="navIcon" src="../assets/icons/sidebar/dashboard.png" alt="" />
+            <span class="navText">Dashboard</span>
+          </a>
+
+          <a class="navItem" href="./schedule.html">
+            <img class="navIcon" src="../assets/icons/sidebar/schedule.png" alt="" />
+            <span class="navText">Schedule</span>
+          </a>
+
+          <a class="navItem active" href="./studies.html">
+            <img class="navIcon" src="../assets/icons/sidebar/studies.png" alt="" />
+            <span class="navText">Studies</span>
+          </a>
+
+          <a class="navItem" href="./help.html">
+            <img class="navIcon" src="../assets/icons/sidebar/help.png" alt="" />
+            <span class="navText">Help</span>
+          </a>
+        </nav>
+
+        <button class="logoutBtn" type="button">
+          <img class="navIcon" src="../assets/icons/sidebar/logout.png" alt="" />
+          <span class="navText">Logout</span>
+        </button>
+      </aside>
+
+      <!-- MAIN -->
+      <main class="appMain">
+        <!-- HEADER -->
+        <header class="header">
+          <div class="headerLeft">
+            <div class="hello">Hi</div>
+            <div class="name">Naïma</div>
+          </div>
+
+          <div class="headerRight">
+            <button class="iconBtn" type="button" aria-label="Notifications">
+              <img src="../assets/icons/ui/bell.png" alt="" />
+            </button>
+            <button class="iconBtn" type="button" aria-label="Settings">
+              <img src="../assets/icons/ui/settings.png" alt="" />
+            </button>
+          </div>
+        </header>
+
+        <!-- CONTENT -->
+        <section class="content">
+          <div class="pageTitle">Studies</div>
+
+          <div class="pageGrid">
+            <div class="card">
+              <div class="cardHead">
+                <h2 class="cardTitle">My courses</h2>
+                <p class="cardDesc">Overview of your current modules.</p>
+              </div>
+
+              <div class="emptyState">
+                <div class="emptyTitle">No data yet</div>
+                <div class="emptyDesc">This section will show your courses and materials.</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cardHead">
+                <h2 class="cardTitle">Assignments</h2>
+                <p class="cardDesc">Upcoming tasks and deadlines.</p>
+              </div>
+
+              <div class="emptyState">
+                <div class="emptyTitle">Nothing scheduled</div>
+                <div class="emptyDesc">Assignments will appear here when available.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <nav class="bottomNav" aria-label="Bottom navigation">
+  <a class="bottomItem bottomItem--active" href="./dashboard.html" aria-current="page">
+    <img class="bottomIcon" src="../assets/icons/sidebar/dashboard-active.png" alt="" />
+    <span class="bottomText">Dashboard</span>
+  </a>
+
+  <a class="bottomItem" href="./schedule.html">
+    <img class="bottomIcon" src="../assets/icons/sidebar/schedule.png" alt="" />
+    <span class="bottomText">Schedule</span>
+  </a>
+
+  <a class="bottomItem" href="./studies.html">
+    <img class="bottomIcon" src="../assets/icons/sidebar/studies.png" alt="" />
+    <span class="bottomText">Studies</span>
+  </a>
+
+  <a class="bottomItem" href="./help.html">
+    <img class="bottomIcon" src="../assets/icons/sidebar/help.png" alt="" />
+    <span class="bottomText">Help</span>
+  </a>
+</nav>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

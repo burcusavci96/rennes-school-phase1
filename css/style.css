@@ -1,0 +1,47 @@
+@import "./base.css";
+@import "./layout.css";
+@import "./sidebar.css";
+@import "./header.css";
+
+@import "./dashboard.css";
+@import "./schedule.css";
+
+
+.panelGrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.panelCard{
+  background:#fff;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(15,23,42,.06);
+  padding: 16px;
+}
+
+.panelTitle{
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color:#111827;
+}
+
+.panelText{
+  margin: 0 0 12px;
+  color:#64748b;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.panelList{
+  margin:0;
+  padding-left: 18px;
+  color:#0f172a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px){
+  .panelGrid{ grid-template-columns: 1fr; }
+}

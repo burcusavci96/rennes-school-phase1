@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News • Rennes School</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Ensure dashboard/news styles are loaded even if style.css doesn't import them -->
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+
+  <body>
+    <div class="appShell">
+      <aside class="sidebar" aria-label="Sidebar navigation">
+        <div class="brand">
+          <img class="brandLogo" src="../assets/logo/logo.png" alt="Rennes School" />
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="navItem" href="./dashboard.html">
+            <img class="navIcon" src="../assets/icons/sidebar/dashboard.png" alt="" />
+            <span class="navText">Dashboard</span>
+          </a>
+
+          <a class="navItem" href="./schedule.html">
+            <img class="navIcon" src="../assets/icons/sidebar/schedule.png" alt="" />
+            <span class="navText">Schedule</span>
+          </a>
+
+          <a class="navItem" href="./studies.html">
+            <img class="navIcon" src="../assets/icons/sidebar/studies.png" alt="" />
+            <span class="navText">Studies</span>
+          </a>
+
+          <a class="navItem" href="./help.html">
+            <img class="navIcon" src="../assets/icons/sidebar/help.png" alt="" />
+            <span class="navText">Help</span>
+          </a>
+        </nav>
+
+        <button class="logoutBtn" type="button">
+          <img class="navIcon" src="../assets/icons/sidebar/logout.png" alt="" />
+          <span class="navText">Logout</span>
+        </button>
+      </aside>
+
+      <main class="appMain">
+        <header class="header">
+          <div class="headerLeft">
+            <div class="hello">Hi</div>
+            <div class="name">Naïma</div>
+          </div>
+
+          <div class="headerRight">
+            <button class="iconBtn" type="button" aria-label="Notifications">
+              <img src="../assets/icons/ui/bell.png" alt="" />
+            </button>
+            <button class="iconBtn" type="button" aria-label="Settings">
+              <img src="../assets/icons/ui/settings.png" alt="" />
+            </button>
+          </div>
+        </header>
+
+        <section class="content">
+          <div class="dashPanel">
+            <div class="panelTop">
+              <div class="tabs" role="tablist" aria-label="Dashboard feed">
+                <a class="tab" href="./dashboard.html">Events</a>
+                <a class="tab tab--active" href="./news.html" aria-current="page">News</a>
+              </div>
+
+              <a class="seeAll" href="./dashboard.html">Back</a>
+            </div>
+
+            <div class="newsList">
+              <article class="newsCard">
+                <img class="newsImg" src="../assets/banners/event-1.png" alt="Journée Portes Ouvertes" />
+                <div class="newsBody">
+                  <div class="newsTitle">Journée Portes Ouvertes</div>
+                  <div class="newsMeta">Campus • 20 Feb 2026</div>
+                </div>
+              </article>
+
+              <article class="newsCard">
+                <img class="newsImg" src="../assets/banners/event-2.png" alt="Marathon Vert 2024" />
+                <div class="newsBody">
+                  <div class="newsTitle">Retour sur le Marathon Vert 2024</div>
+                  <div class="newsMeta">Highlights • 12 Feb 2026</div>
+                </div>
+              </article>
+
+              <article class="newsCard">
+                <img class="newsImg" src="../assets/banners/event-3.png" alt="Junior Comex" />
+                <div class="newsBody">
+                  <div class="newsTitle">Junior Comex: students join the executive board</div>
+                  <div class="newsMeta">Student life • 09 Feb 2026</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <nav class="bottomNav" aria-label="Bottom navigation">
+          <a class="bottomItem" href="./dashboard.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/dashboard.png" alt="" />
+            <span class="bottomText">Dashboard</span>
+          </a>
+
+          <a class="bottomItem" href="./schedule.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/schedule.png" alt="" />
+            <span class="bottomText">Schedule</span>
+          </a>
+
+          <a class="bottomItem" href="./studies.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/studies.png" alt="" />
+            <span class="bottomText">Studies</span>
+          </a>
+
+          <a class="bottomItem" href="./help.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/help.png" alt="" />
+            <span class="bottomText">Help</span>
+          </a>
+        </nav>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

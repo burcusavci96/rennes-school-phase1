@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard • Rennes School</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+  </head>
+
+  <body>
+    <div class="appShell">
+      <aside class="sidebar" aria-label="Sidebar navigation">
+        <div class="brand">
+          <img class="brandLogo" src="../assets/logo/logo.png" alt="Rennes School" />
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="navItem active" href="./dashboard.html" aria-current="page">
+            <img class="navIcon" src="../assets/icons/sidebar/dashboard-active.png" alt="" />
+            <span class="navText">Dashboard</span>
+          </a>
+
+          <a class="navItem" href="./schedule.html">
+            <img class="navIcon" src="../assets/icons/sidebar/schedule.png" alt="" />
+            <span class="navText">Schedule</span>
+          </a>
+
+          <a class="navItem" href="./studies.html">
+            <img class="navIcon" src="../assets/icons/sidebar/studies.png" alt="" />
+            <span class="navText">Studies</span>
+          </a>
+
+          <a class="navItem" href="./help.html">
+            <img class="navIcon" src="../assets/icons/sidebar/help.png" alt="" />
+            <span class="navText">Help</span>
+          </a>
+        </nav>
+
+        <button class="logoutBtn" type="button">
+          <img class="navIcon" src="../assets/icons/sidebar/logout.png" alt="" />
+          <span class="navText">Logout</span>
+        </button>
+      </aside>
+
+      <main class="appMain">
+        <header class="header">
+          <div class="headerLeft">
+            <div class="hello">Hi</div>
+            <div class="name">Naïma</div>
+          </div>
+
+          <div class="headerRight">
+            <button class="iconBtn" type="button" aria-label="Notifications">
+              <img src="../assets/icons/ui/bell.png" alt="" />
+            </button>
+            <button class="iconBtn" type="button" aria-label="Settings">
+              <img src="../assets/icons/ui/settings.png" alt="" />
+            </button>
+          </div>
+        </header>
+
+        <section class="content">
+          <div class="dashPanel">
+            <div class="dashGrid">
+              <section class="panel panel--left">
+                <h2 class="panelTitle">Next course</h2>
+
+                <article class="courseCard">
+                  <div class="datePill datePill--pink" aria-hidden="true">
+                    <div class="dateDow">Tue</div>
+                    <div class="dateDay">16</div>
+                  </div>
+
+                  <div class="courseInfo">
+                    <div class="courseTop">
+                      <div class="courseName">Stellar Physics</div>
+                      <div class="courseDur">2h.</div>
+                    </div>
+
+                    <div class="courseMeta">
+                      <span class="chip">Bat. B</span>
+                      <span class="chip">Salle 12</span>
+                    </div>
+
+                    <div class="courseTime">
+                      <img class="miniIcon" src="../assets/icons/schedule/clock.png" alt="" />
+                      <span>9:30 AM → 11:30 AM</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="courseCard isSecondary">
+                  <div class="datePill datePill--blue" aria-hidden="true">
+                    <div class="dateDow">Tue</div>
+                    <div class="dateDay">16</div>
+                  </div>
+
+                  <div class="courseInfo">
+                    <div class="courseTop">
+                      <div class="courseName">Stellar Physics</div>
+                      <div class="courseDur">2h.</div>
+                    </div>
+
+                    <div class="courseMeta">
+                      <span class="chip">Bat. B</span>
+                      <span class="chip">Salle 12</span>
+                    </div>
+
+                    <div class="courseTime">
+                      <img class="miniIcon" src="../assets/icons/schedule/clock.png" alt="" />
+                      <span>1 PM → 3 PM</span>
+                    </div>
+                  </div>
+                </article>
+
+                <div class="subTitle isSecondary">Demain</div>
+
+                <article class="courseCard isSecondary">
+                  <div class="datePill datePill--mint" aria-hidden="true">
+                    <div class="dateDow">Wed</div>
+                    <div class="dateDay">17</div>
+                  </div>
+
+                  <div class="courseInfo">
+                    <div class="courseTop">
+                      <div class="courseName">Business Analytics</div>
+                      <div class="courseDur">2h.</div>
+                    </div>
+
+                    <div class="courseMeta">
+                      <span class="chip">Bat. B</span>
+                      <span class="chip">Salle 12</span>
+                    </div>
+
+                    <div class="courseTime">
+                      <img class="miniIcon" src="../assets/icons/schedule/clock.png" alt="" />
+                      <span>9:30 AM → 11:30 AM</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="courseCard isSecondary">
+                  <div class="datePill datePill--mint" aria-hidden="true">
+                    <div class="dateDow">Wed</div>
+                    <div class="dateDay">17</div>
+                  </div>
+
+                  <div class="courseInfo">
+                    <div class="courseTop">
+                      <div class="courseName">Change Management</div>
+                      <div class="courseDur">2h.</div>
+                    </div>
+
+                    <div class="courseMeta">
+                      <span class="chip">Bat. B</span>
+                      <span class="chip">Salle 12</span>
+                    </div>
+
+                    <div class="courseTime">
+                      <img class="miniIcon" src="../assets/icons/schedule/clock.png" alt="" />
+                      <span>2 PM → 4 PM</span>
+                    </div>
+                  </div>
+                </article>
+              </section>
+
+              <section class="panel panel--center">
+                <div class="panelTop">
+                  <div class="tabs" role="tablist" aria-label="Dashboard feed">
+                    <a class="tab tab--active" href="./dashboard.html" aria-current="page">Events</a>
+                    <a class="tab" href="./news.html">News</a>
+                  </div>
+
+                  <a class="seeAll" href="./news.html">See All</a>
+                </div>
+
+                <div class="bannerList">
+                  <a class="banner banner--top" href="./news.html" aria-label="Journée Portes Ouvertes">
+                    <img class="bannerImg" src="../assets/banners/event-1.png" alt="Journée Portes Ouvertes" />
+                    <div class="bannerOverlay">
+                      <div class="bannerKicker">JOURNÉE PORTES OUVERTES</div>
+                    </div>
+                  </a>
+
+                  <a class="banner banner--center" href="./news.html" aria-label="Retour sur le Marathon Vert 2024">
+                    <img class="bannerImg" src="../assets/banners/event-2.png" alt="Retour sur le Marathon Vert 2024" />
+                    <div class="bannerOverlay">
+                      <div class="bannerKicker">RETOUR SUR LE MARATHON VERT 2024</div>
+                    </div>
+                  </a>
+
+                  <a class="banner banner--bottom" href="./news.html" aria-label="Junior Comex">
+                    <img class="bannerImg" src="../assets/banners/event-3.png" alt="Junior Comex" />
+                    <div class="bannerOverlay">
+                      <div class="bannerKicker">JUNIOR COMEX: DES ÉTUDIANTS INTÈGRENT LE COMEX</div>
+                    </div>
+                  </a>
+                </div>
+              </section>
+
+              <aside class="panel panel--right">
+                <div class="welcomeCard">
+                  <button class="welcomeClose" type="button" aria-label="Close">×</button>
+
+                  <div class="welcomeTitle">Welcome to Rennes School of Business !</div>
+                  <p class="welcomeText">
+                    We are delighted to welcome you to this space dedicated to your academic and personal success...
+                  </p>
+
+                  <div class="welcomeActions">
+                    <button class="pillBtn" type="button">Campus map</button>
+                    <button class="pillBtn" type="button">School services</button>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <nav class="bottomNav" aria-label="Bottom navigation">
+          <a class="bottomItem bottomItem--active" href="./dashboard.html" aria-current="page">
+            <img class="bottomIcon" src="../assets/icons/sidebar/dashboard-active.png" alt="" />
+            <span class="bottomText">Dashboard</span>
+          </a>
+
+          <a class="bottomItem" href="./schedule.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/schedule.png" alt="" />
+            <span class="bottomText">Schedule</span>
+          </a>
+
+          <a class="bottomItem" href="./studies.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/studies.png" alt="" />
+            <span class="bottomText">Studies</span>
+          </a>
+
+          <a class="bottomItem" href="./help.html">
+            <img class="bottomIcon" src="../assets/icons/sidebar/help.png" alt="" />
+            <span class="bottomText">Help</span>
+          </a>
+        </nav>
+      </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
